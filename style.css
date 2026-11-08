@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* square low-res screen, scaled without smoothing */
+#screen {
+  display: block;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+
+/* debug panel (` toggles) */
+#debug {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 100%;
+  padding: 8px;
+  background-color: #000000;
+  border-left: 1px solid #5f574f;
+  color: #fff1e8;
+  font: 11px/1.4 monospace;
+}
+
+#debug[hidden] {
+  display: none;
+}
+
+#debug h2 {
+  margin: 6px 0 4px;
+  font-size: 11px;
+  color: #ffa300;
+}
+
+#debug h2 small {
+  color: #5f574f;
+  font-weight: normal;
+}
+
+#debug-matrix {
+  border-collapse: collapse;
+}
+
+#debug-matrix th {
+  padding: 0 3px;
+  font-weight: normal;
+}
+
+#debug-matrix td {
+  position: relative;
+  width: 30px;
+  height: 14px;
+  border: 1px solid #1d2b53;
+  text-align: center;
+}
+
+#debug-matrix td i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #ff004d;
+}
+
+#debug-matrix td span {
+  position: relative;
+  color: #c2c3c7;
+}
+
+#debug-matrix td.top {
+  outline: 1px solid #fff1e8;
+  outline-offset: -1px;
+}
+
+#debug-matrix td.top span {
+  color: #fff1e8;
+}
+
+#debug-matrix td.self {
+  background-color: #1d2b53;
+}
+
+#debug-matrix .dead {
+  opacity: 0.35;
+}
+
+#debug-log {
+  flex: 1;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#debug-log b {
+  color: #5f574f;
+  font-weight: normal;
+}
+
+#debug-matrix th em {
+  color: #5f574f;
+  font-style: normal;
+}
+
+#debug select {
+  background-color: #000000;
+  color: #fff1e8;
+  border: 1px solid #5f574f;
+  font: inherit;
+}
+
+body.debug-on {
+  padding-right: 480px;
+}
