@@ -83,8 +83,8 @@ class Lang {
       ['GOSSIP', 'spreads its top suspect to someone.'],
       ['SEER', 'once a day guess if someone is the monster. with about 70% certainty.'],
       ['DOCTOR', 'whoever it talks to cannot be killed that day.'],
-      ['KNIGHT', 'guard. if it talked to your victim that step it kills you. tends to not vote.'],
-      ['HUNTER', 'cannot be killed. if it talked to your victim that step it kills you.'],
+      ['KNIGHT', 'if it talked to your victim that step it kills you. tends to not vote.'],
+      ['HUNTER', 'cannot be assassinated. if it talked to your victim that step it kills you.'],
     ],
     pt: [
       ['YOU', 'o monstro. mate e engane todos.'],
@@ -92,8 +92,8 @@ class Lang {
       ['GOSSIP', 'espalha seu maior suspeito para alguem.'],
       ['SEER', 'uma vez por dia adivinha se alguem e o monstro. com cerca de 70% de certeza.'],
       ['DOCTOR', 'com quem ele conversa nao pode morrer naquele dia.'],
-      ['KNIGHT', 'guarda. se falou com sua vitima naquela açao ele mata voce. tende a nao votar.'],
-      ['HUNTER', 'nao pode morrer. se falou com sua vitima naquela açao ele mata voce.'],
+      ['KNIGHT', 'se falou com sua vitima naquela açao ele mata voce. tende a nao votar.'],
+      ['HUNTER', 'nao pode ser assassinado. se falou com sua vitima naquela açao ele mata voce.'],
     ],
   };
 
